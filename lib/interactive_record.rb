@@ -51,7 +51,7 @@ class InteractiveRecord
   end
 
   def self.find_by(attr)
-
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attr.keys[0].to_s} == ?"
   end
 
 
